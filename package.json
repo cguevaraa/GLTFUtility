@@ -1,10 +1,10 @@
 {
-    "name": "com.siccity.gltfutility",
-    "displayName": "GLTFUtility",
-    "version": "0.7.2",
+    "name": "com.cguevaraa.gltfutility",
+    "displayName": "Custom GLTFUtility",
+    "version": "0.0.1",
     "unity": "2018.2",
     "keywords": ["glTF", "import"],
-	"description": "Lightweight glTF loader.",
+	"description": "GLTFUtility with fixed BlendShape weights (0–1 range)",
 	"dependencies": {
 		"com.unity.nuget.newtonsoft-json": "2.0.0"
 	}
