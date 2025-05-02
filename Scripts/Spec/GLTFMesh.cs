@@ -347,9 +347,9 @@ namespace Siccity.GLTFUtility {
 						regexMatch = blendShapeRegex.Match(keep[i].name);
 
 						if (regexMatch.Groups[2].Value == "")
-							blendShapeWeight = 100f;
+							blendShapeWeight = 1;
 						else
-							blendShapeWeight = 100f * (float.Parse(regexMatch.Groups[2].Value) / float.Parse(regexMatch.Groups[3].Value));
+							blendShapeWeight = Mathf.Clamp01(float.Parse(regexMatch.Groups[2].Value) / float.Parse(regexMatch.Groups[3].Value));
 
 						mesh.AddBlendShapeFrame(regexMatch.Groups[1].Value, blendShapeWeight, keep[i].pos, keep[i].norm, keep[i].tan);
 					}
